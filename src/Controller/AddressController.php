@@ -18,6 +18,7 @@ class AddressController extends AbstractController
      */
     public function index(AddressRepository $addressRepository): Response
     {
+        dd('ici');
         return $this->render('address/index.html.twig', [
             'addresses' => $addressRepository->findAll(),
         ]);
